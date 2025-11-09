@@ -1,0 +1,23 @@
+{
+	"name": "empty_json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLStoADF",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "empty.json",
+				"folderPath": "Monitor",
+				"fileSystem": "source"
+			}
+		},
+		"schema": {
+			"type": "object"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
